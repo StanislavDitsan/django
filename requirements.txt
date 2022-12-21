@@ -1,4 +1,4 @@
-asgiref==3.5.2
+hasgiref==3.5.2
 coverage==7.0.0
 dj-database-url==0.5.0
 Django==3.2.16
