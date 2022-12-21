@@ -10,9 +10,16 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
+<<<<<<< HEAD
 if os.path.isfile("env.py"):
     import env
     
+=======
+import dj_database_url
+if os.path.isfile("env.py"):
+    import env
+
+>>>>>>> 0a52a17fe9a631bf56b1d0b83e5b84727a99e465
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -75,7 +82,13 @@ WSGI_APPLICATION = 'django_todo.wsgi.application'
 #     }
 # }
 
-DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))}
+DATABASES = {
+    'default':
+    dj_database_url.parse(
+        os.environ.get(
+            'postgres://snvyivqg:G-9dlYNaS3xr2GDruvbCgFDJv14vkcc5@rogue.db.elephantsql.com/snvyivqg'
+        ))
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators

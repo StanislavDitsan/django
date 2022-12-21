@@ -8,3 +8,7 @@ node_modules/
 .github/
 cloudinary_python.txt
 *.sqlite3
+<<<<<<< HEAD
+=======
+settings.py
+>>>>>>> 0a52a17fe9a631bf56b1d0b83e5b84727a99e465
